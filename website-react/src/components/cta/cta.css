@@ -1,0 +1,70 @@
+.flow__cta {
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem;
+    margin: 4rem;
+    border-radius: 1rem;
+    background: var(--gradient-bar);
+}
+.flow__cta-button button:hover {
+    color: rgb(255, 188, 255);
+}
+
+.flow__cta-content p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 35px;
+}
+.flow__cta-content h3 {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 45px;
+}
+.flow__cta-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+
+}
+.flow__cta-button button {
+    background: #bcd948;
+    border-radius: 40px;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    min-width: 150px;
+}
+@media screen and (max-width: 650px) {
+    .flow__cta {
+        flex-direction: column;
+    }
+    .flow__cta-button {
+        margin: 2rem 0 0;
+    }
+}
+@media screen and (max-width: 550px) {
+    .flow__cta {
+        margin: 4rem 2rem;
+    }
+    .flow__cta-content {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .flow__cta-button button {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}

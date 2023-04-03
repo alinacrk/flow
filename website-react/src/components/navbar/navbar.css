@@ -1,0 +1,135 @@
+.flow__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+    
+}
+
+.flow__navbar_links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+a:hover {
+    color: rgb(255, 188, 255);
+  }
+  
+  
+.flow__navbar-links_logo {
+    margin-right: 2rem;
+}
+.flow__navbar-links_logo img {
+    width: 70px;
+    height: 70px;
+}
+.flow__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+}
+.flow__navbar-sign button:hover,
+.flow__navbar-menu_container-links-sign p:hover,
+.flow__navbar-menu_container-links-sign button:hover  {
+    color: rgb(255, 188, 255);
+}
+.flow__navbar-sign p:hover {
+    color: rgb(255, 188, 255);
+}
+
+
+.flow__navbar-sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.flow__navbar-links_container p,
+.flow__navbar-sign p,
+.flow__navbar-menu_container p {
+    color: #ffffff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 1rem;
+    cursor: pointer;
+
+}
+.flow__navbar-sign button,
+.flow__navbar-menu_container button {
+padding: 0.5rem 1rem;
+color: #ffffff;
+font-family: var(--font-family);
+font-weight: 500;
+line-height: 25px;
+font-size: 18px;
+background: #bcd948;
+border-radius: 5px;
+border: none;
+outline: none;
+cursor: pointer;
+}
+.flow__navbar-menu {
+    margin: 1rem;
+    display: none;
+    position: relative;
+    
+}
+.flow__navbar-menu svg {
+    cursor: pointer;
+}
+.flow__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    padding: 4rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 310px;
+    min-height: 400px;
+    border-radius: 10px;
+   
+}
+.flow__navbar-menu_container p {
+    margin: 1rem 0;
+
+}
+
+
+@media screen and (max-width: 1050px) {
+    .flow__navbar-links_container {
+        display: none;
+    }
+     .flow__navbar-menu {
+        display: flex;
+     }
+}
+@media screen and (max-width: 700px) {
+    .flow__navbar {
+        padding: 2rem  4rem;
+    }
+    
+}
+@media screen and (max-width: 550px) {
+    .flow__navbar {
+        padding: 2rem;
+    }
+    .flow__navbar-sign {
+        display: none;
+    }
+    .flow__navbar-menu_container {
+        top: 20px;
+    }
+    .flow__navbar-menu_container-links-sign {
+        display: block;
+    }
+}
+ 
